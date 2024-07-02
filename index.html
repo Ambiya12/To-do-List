@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <h1>Ma Todo List</h1>
+
+    <div id="notification" class="hidden"></div>
+
+    <section id="task-list-section">
+        <h2>Liste des tâches</h2>
+        <ul id="task-list">
+        </ul>
+    </section>
+
+    <section id="task-form-section">
+        <h2>Ajouter une tâche</h2>
+        <form id="task-form">
+            <input type="text" id="task-title" placeholder="Nom de la tâche" required>
+            <select id="task-priority">
+                <option value="1">Haute Priorité</option>
+                <option value="2">Priorité Normale</option>
+                <option value="3">Basse Priorité</option>
+            </select>
+            <button type="submit">Ajouter</button>
+        </form>
+        <button id="delete-tasks">Supprimer toutes les tâches sélectionnées</button>
+    </section>
+</body>
+</html>
